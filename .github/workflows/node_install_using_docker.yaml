@@ -7,6 +7,16 @@ jobs:
       image: node:24-alpine
     steps:
       - uses: actions/checkout@v4
+
+      - name: Debug - check environment
+        run: |
+          echo "Current dir:"
+          pwd
+          echo "Files present:"
+          ls -la
+          echo "Git available?"
+          which git || echo "git NOT found"
+
       - run: node -v
       - run: npm ci
       - run: npm run build --if-present
