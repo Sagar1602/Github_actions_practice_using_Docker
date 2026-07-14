@@ -10,6 +10,7 @@ jobs:
 
       - name: Debug - check environment
         run: |
+        
           echo "Current dir:"
           pwd
           echo "Files present:"
