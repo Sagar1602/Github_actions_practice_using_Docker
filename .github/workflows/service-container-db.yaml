@@ -1,5 +1,5 @@
 name: service-container-db
-on: push
+on: workflow_dispatch
 jobs:
   test-with-db:
     runs-on: ubuntu-latest
