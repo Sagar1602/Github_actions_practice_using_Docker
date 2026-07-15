@@ -12,5 +12,4 @@ jobs:
         with:
           node-verison: '24'
 
-      - name: run npm build if present
-        run: npm run build --if-present      
+           
