@@ -1,5 +1,5 @@
 name: caller_workflow_using_composit_actions
-on: workflow_dispatch
+on: push
 jobs:
   node-setup:
     runs-on: ubuntu-latest
