@@ -1,0 +1,16 @@
+name: caller_workflow_using_composit_actions
+on: push
+jobs:
+  node-setup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: code_checkout
+        uses: actions/checkout@v4
+
+      - name: calling the composite actions
+        uses: ./.github/actions/setup-node-with-cache
+        with:
+          node-verison: '24'
+
+      - name: run npm build if present
+        run: npm run build --if-present      
