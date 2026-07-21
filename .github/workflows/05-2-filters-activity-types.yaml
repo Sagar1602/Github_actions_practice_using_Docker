@@ -1,6 +1,6 @@
 name: 05-2-filters-activity-types
 on:
-  pull_request:
+  workflow_dispatch:
     types: [closed]
     branches: 
       - main
