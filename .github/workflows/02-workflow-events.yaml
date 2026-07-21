@@ -7,4 +7,4 @@ jobs:
       - name: Show the trigger
         run: |
           echo "push"
-          echo "github.trigger"
+          echo "github triggers :${{github.event_name}}"
