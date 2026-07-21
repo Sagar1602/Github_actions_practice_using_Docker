@@ -4,14 +4,14 @@ jobs:
   echo_hello:
     runs-on: ubuntu-latest
     steps:
-      name: Say Hello
-      run: echo "Hello"
+      - name: Say Hello
+        run: echo "Hello"
 
   echo_goodbye:
     runs-on: ubuntu-latest
     steps:
-      name: Say Goodbye
-      run: echo "goodbye"    
+      - name: Say Goodbye
+        run: echo "goodbye"    
 
 
   
