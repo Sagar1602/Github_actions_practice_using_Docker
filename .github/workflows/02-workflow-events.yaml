@@ -5,4 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Show the trigger
-        run: echo "push"
+        run: |
+          echo "push"
+          github.trigger
