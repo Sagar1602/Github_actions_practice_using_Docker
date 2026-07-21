@@ -9,4 +9,9 @@ jobs:
 
       - name: printing folder 
         run: tree
-         
+
+  node-setup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: setup of node js 
+        uses: actions/-node-setup@v4       
