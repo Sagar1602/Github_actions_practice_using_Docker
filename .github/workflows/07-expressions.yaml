@@ -11,6 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print
-        if: github.event_name == 'push' || github.event_name == 'pull_request'
+        if: github.event_name == 'push' && github.event_name == 'pull_request'
         run: echo "this is printing statement"        
     
