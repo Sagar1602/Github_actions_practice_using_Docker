@@ -7,4 +7,4 @@ jobs:
       - name: printing
         run: |
           echo "This job is running on an Ubuntu runner."
-          echo " runs-on OS: ${{github.runner}}"
+          echo " runs-on OS: ${{github.runners}}"
