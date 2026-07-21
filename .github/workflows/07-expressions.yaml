@@ -1,0 +1,15 @@
+name: 07-expressions
+on: 
+  push:
+  workflow_dispatch:
+    inputs:
+      debug:
+        default: false
+        types: boolean
+jobs:
+  print_Commands:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print
+        run: echo "this is printing statement  "        
+    
