@@ -1,5 +1,5 @@
 name: 08-variables
-on: corrected
+on: 
   push:
   workflow_dispatch:
 
