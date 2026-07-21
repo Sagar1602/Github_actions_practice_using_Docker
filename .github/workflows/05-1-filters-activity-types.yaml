@@ -1,9 +1,9 @@
 name: 05-1-filters-activity-types
 on:
   pull_request:
-  types: [opened, synchronize]
-  branches:
-    - main
+    types: [opened, synchronize]
+    branches:
+      - main
 jobs:
   print_Commands:
     runs-on: ubuntu-latest
