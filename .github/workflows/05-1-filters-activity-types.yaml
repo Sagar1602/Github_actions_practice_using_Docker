@@ -1,7 +1,7 @@
 name: 05-1-filters-activity-types
 on:
   pull_request:
-  type: [opened, syncronize]
+  types: [opened, syncronize]
   branches: [main]
 jobs:
   print_Commands:
