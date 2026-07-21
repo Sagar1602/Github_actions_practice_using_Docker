@@ -1,0 +1,15 @@
+name: 08-variables
+on: push
+jobs:
+  push:
+  workflow_dispatch:
+
+env:
+  WORKFLOW_VAR= "I am a workflow env var"
+  OVERWRITTEN= "I am Overwritten" 
+jobs:
+  echo_statement:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print_statement
+        run:  echo " this os the env example i am just calling ${{env.WORKFLOW_VAR}} and ${{env.OVERWRITTEN}} 
