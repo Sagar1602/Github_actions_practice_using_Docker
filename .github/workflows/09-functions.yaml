@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: failing code
-        uses: action/setup-node@v4
+        run: exit 1
 
       - name: I will be skipped
         if: success()
