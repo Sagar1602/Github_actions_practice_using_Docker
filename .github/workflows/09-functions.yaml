@@ -4,6 +4,11 @@ jobs:
   echo:
     runs-on: ubuntu-latest
     steps:
+      - name: PR Title
+        run: echo ${{"github.event.pull_request.titles"}}
+
+      - name: PR label
+        run: echo ${{"github.event.pull_request.labels"}}  
       - name: sleep for 20 seconds 
         run: sleep 20  
 
