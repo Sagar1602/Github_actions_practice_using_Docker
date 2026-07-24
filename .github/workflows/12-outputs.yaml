@@ -26,5 +26,5 @@ jobs:
    
     steps:
       - name: deploy
-        if: ${{needs.build.build-status == 'success'}}
+        if: ${{needs.build.build-status == 'failure'}}
         run: echo "Deploying"          
