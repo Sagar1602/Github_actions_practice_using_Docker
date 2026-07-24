@@ -4,7 +4,7 @@ on:
     inputs:
       build-status:
         types: choice
-        default: success
+        default: failure
         options: 
           - success
           - failure
